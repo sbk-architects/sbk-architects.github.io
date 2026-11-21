@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SBK Architects</title>
+<meta name="description" content="SBK Architects is an architecture and civil construction studio in Mysore. One team designs, engineers and builds your home, from the first line to the final light.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SBK Architects · Architecture &amp; Civil Construction">
+<meta property="og:description" content="One team designs, engineers and builds your home, from the first line to the final light.">
+<meta name="theme-color" content="#F1EEE6">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Ballet:opsz@16..72&amp;family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head>
+<body>
+<!--CONTENT:START-->
+<script>
+  /* Back from a project page: cover the page with paper and the project's picture before it
+     first paints; js/main.js (section 12) then closes the picture into its card's arch. */
+  (function () {
+    try {
+      var b = JSON.parse(sessionStorage.getItem('sbk:back') || 'null');
+      if (!b || Date.now() - b.t > 8000 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var v = document.createElement('div'), a = document.createElement('div'), i = new Image();
+      v.className = 'xfer-veil';
+      a.className = 'arch xfer';
+      a.setAttribute('aria-hidden', 'true');
+      a.style.cssText = 'left:' + b.r[0] + 'px;top:' + b.r[1] + 'px;width:' + b.r[2] + 'px;height:' + b.r[3] + 'px';
+      if (b.lqip) a.style.setProperty('--lqip', b.lqip);
+      if (b.pos) a.style.setProperty('--pos', b.pos);
+      if (b.flat) { a.className += ' is-plain'; a.style.borderRadius = '0'; }
+      i.alt = '';
+      i.decoding = 'sync';
+      i.src = b.src;
+      a.appendChild(i);
+      document.body.appendChild(v);
+      document.body.appendChild(a);
+      setTimeout(function () { if (!(window.AA && window.AA.xfer)) { v.remove(); a.remove(); } }, 3000);
+    } catch (e) { /* storage blocked: no transition */ }
+  })();
+</script>
+<a class="skip" href="#studio">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      <span class="menu-btn__icon" aria-hidden="true"><i></i><i></i></span>
+      <span class="menu-btn__label">Menu</span>
+    </button>
+    <a class="brand" href="#top" aria-label="SBK Architects, back to top">
+      <svg class="brand__mark" viewBox="0 0 26 32" aria-hidden="true"><path d="M2.5 31V13a10.5 10.5 0 0 1 21 0v18M7.5 31V14.5a5.5 5.5 0 0 1 11 0V31M1 31.3h24M13 2.5v4.2"/></svg>
+      <span class="brand__name">SBK <em>Architects</em></span>
+    </a>
+    <a class="btn btn--ghost header-cta" href="#contact">Book a site visit</a>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" data-menu inert>
+  <div class="menu__top">
+    <button class="menu-btn menu__close" type="button" data-menu-close>
+      <span class="menu-btn__icon" aria-hidden="true"><i style="transform:translateY(3.5px) rotate(45deg)"></i><i style="width:100%;transform:translateY(-3.5px) rotate(-45deg)"></i></span>
+      <span>Close</span>
+    </button>
+    <span class="brand" aria-hidden="true">
+      <svg class="brand__mark" viewBox="0 0 26 32"><path d="M2.5 31V13a10.5 10.5 0 0 1 21 0v18M7.5 31V14.5a5.5 5.5 0 0 1 11 0V31M1 31.3h24M13 2.5v4.2"/></svg>
+    </span>
+  </div>
+  <div class="menu__body">
+    <nav aria-label="Main">
+      <ul class="menu__links">
+        <li><a href="#phase-1" style="--i:0">The build <span>7 phases</span></a></li>
+        <li><a href="#studio" style="--i:1">Studio</a></li>
+        <li><a href="#services" style="--i:2">Services</a></li>
+        <li><a href="#works" style="--i:3">Work</a></li>
+        <li><a href="#contact" style="--i:4">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu__aside">
+      <p class="label label--gold">Architects &amp; civil contractors</p>
+      <p>Design, structure and construction under one contract. Tell us about your plot and we will set up a site visit.</p>
+      <a class="btn btn--solid" href="#contact">Book a site visit</a>
+    </div>
+  </div>
+  <div class="menu__foot">
+    <p class="label">Mysore, Karnataka</p>
+    <p class="label">Mon to Sat · 10 am to 7 pm</p>
+  </div>
+</div>
+
+<main id="top">
+  <!-- ============ THE BUILD: sticky 3D stage + scrolling chapters ============ -->
+  <section class="build" id="build" aria-labelledby="hero-title" data-build>
+    <div class="build__stage" data-stage>
+      <canvas class="build__canvas" data-canvas aria-hidden="true"></canvas>
+      <div class="build__labels" data-labels aria-hidden="true"></div>
+      <div class="build__fallback" data-fallback hidden></div>
+      <div class="build__hud" aria-hidden="true">
+        <span>Phase <b data-hud-phase>Site</b></span>
+        <span>Level <b data-hud-level>±0.00</b></span>
+        <span>Built <b data-hud-pct>0%</b></span>
+      </div>
+      <ol class="build__rail" aria-label="Build phases" data-rail>
+        <li><a href="#phase-1">Drawing</a></li>
+        <li><a href="#phase-2">Foundation</a></li>
+        <li><a href="#phase-3">Frame</a></li>
+        <li><a href="#phase-4">Masonry</a></li>
+        <li><a href="#phase-5">Envelope</a></li>
+        <li><a href="#phase-6">Finishes</a></li>
+        <li><a href="#phase-7">Handover</a></li>
+      </ol>
+      <div class="build__progress" aria-hidden="true"><i data-progress></i></div>
+    </div>
+
+    <div class="build__chapters">
+      <div class="chapter chapter--hero" data-chapter="0">
+        <div class="hero__head">
+          <p class="hero__eyebrow label"><span>Architecture</span><i aria-hidden="true"></i><span>Civil construction</span><i class="hide-sm" aria-hidden="true"></i><span class="hide-sm">Mysore</span></p>
+          <h1 class="hero__title" id="hero-title">SBK <span class="hero__word">Architects</span></h1>
+          <p class="hero__script" aria-hidden="true">Designed &amp; built</p>
+        </div>
+        <div class="hero__foot">
+          <p class="lead">An architecture and civil construction studio in Mysore. We draw your home, engineer it and build it with one team, from the first line to the final light.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#contact">Begin your project</a>
+            <a class="btn btn--text" href="#phase-1">Watch it being built</a>
+          </div>
+        </div>
+        <div class="hero__cue label" aria-hidden="true"><span>Scroll to build</span><i></i></div>
+      </div>
+
+      <article class="chapter" id="phase-1" data-chapter="1" aria-labelledby="p1-title">
+        <div class="chapter__pin"><div class="chapter__card">
+          <p class="chapter__meta"><span class="chapter__num">01</span><span class="chapter__of">/ 07</span><span class="chapter__name">Drawing</span></p>
+          <h2 class="chapter__title" id="p1-title">Every building begins as a line.</h2>
+          <p class="chapter__text">We walk the plot, read the sun path and listen to how you live. Then we draw it all in-house: plans, elevations, 3D views and the structural design, Vastu-aware if you want it.</p>
+          <p class="chapter__spec">Site survey · Concept &amp; 3D views · Plan sanction</p>
+        </div></div>
+      </article>
+
+      <article class="chapter" id="phase-2" data-chapter="2" aria-labelledby="p2-title">
+        <div class="chapter__pin"><div class="chapter__card">
+          <p class="chapter__meta"><span class="chapter__num">02</span><span class="chapter__of">/ 07</span><span class="chapter__name">Foundation</span></p>
+          <h2 class="chapter__title" id="p2-title">Footings sized for your soil.</h2>
+          <p class="chapter__text">A soil test sets the footing sizes before any digging starts. Plinth beams then tie the column grid together, so the house stands on ground engineered for its exact plot.</p>
+          <p class="chapter__spec">Soil test · Isolated footings · M25 concrete · Fe500 steel</p>
+        </div></div>
+      </article>
+
+      <article class="chapter" id="phase-3" data-chapter="3" aria-labelledby="p3-title">
+        <div class="chapter__pin"><div class="chapter__card">
+          <p class="chapter__meta"><span class="chapter__num">03</span><span class="chapter__of">/ 07</span><span class="chapter__name">Frame</span></p>
+          <h2 class="chapter__title" id="p3-title">A frame cast floor by floor.</h2>
+          <p class="chapter__text">Columns, beams and slabs go up to drawings our own engineers sign. Every pour is cube-tested, and you get photographs from site every week.</p>
+          <p class="chapter__spec">RCC frame · Cube tests at 7 &amp; 28 days · Weekly site reports</p>
+        </div></div>
+      </article>
+
+      <article class="chapter" id="phase-4" data-chapter="4" aria-labelledby="p4-title">
+        <div class="chapter__pin"><div class="chapter__card">
+          <p class="chapter__meta"><span class="chapter__num">04</span><span class="chapter__of">/ 07</span><span class="chapter__name">Masonry</span></p>
+          <h2 class="chapter__title" id="p4-title">Walls, wiring and water.</h2>
+          <p class="chapter__text">Brick walls rise course by course, with conduits and plumbing laid in sequence, so nothing gets chased out of a finished wall later.</p>
+          <p class="chapter__spec">Wire-cut bricks · Concealed conduits · Pressure-tested lines</p>
+        </div></div>
+      </article>
+
+      <article class="chapter" id="phase-5" data-chapter="5" aria-labelledby="p5-title">
+        <div class="chapter__pin"><div class="chapter__card">
+          <p class="chapter__meta"><span class="chapter__num">05</span><span class="chapter__of">/ 07</span><span class="chapter__name">Envelope</span></p>
+          <h2 class="chapter__title" id="p5-title">Closed up before the monsoon.</h2>
+          <p class="chapter__text">Glazing, waterproofing, railings and cladding close the shell. Every junction is detailed to keep water out and to age well.</p>
+          <p class="chapter__spec">Glazed sliders · Membrane waterproofing · Teak fins</p>
+        </div></div>
+      </article>
+
+      <article class="chapter" id="phase-6" data-chapter="6" aria-labelledby="p6-title">
+        <div class="chapter__pin"><div class="chapter__card">
+          <p class="chapter__meta"><span class="chapter__num">06</span><span class="chapter__of">/ 07</span><span class="chapter__name">Finishes</span></p>
+          <h2 class="chapter__title" id="p6-title">The parts you touch every day.</h2>
+          <p class="chapter__text">Floors, joinery, paint and landscape are finished by craftspeople we have worked with for years. Then the scaffolding comes down.</p>
+          <p class="chapter__spec">Kota stone · Lime plaster · Teak joinery · Landscape</p>
+        </div></div>
+      </article>
+
+      <article class="chapter" id="phase-7" data-chapter="7" aria-labelledby="p7-title">
+        <div class="chapter__pin"><div class="chapter__card">
+          <p class="chapter__meta"><span class="chapter__num">07</span><span class="chapter__of">/ 07</span><span class="chapter__name">Handover</span></p>
+          <h2 class="chapter__title" id="p7-title">Lights on. Welcome home.</h2>
+          <p class="chapter__text">One team, one contract and one point of responsibility from the first line to the final light, with a year of aftercare once you move in.</p>
+          <p class="chapter__spec">As-built drawings · Warranty file · 12 months of care</p>
+          <a class="btn btn--solid chapter__cta" href="#contact">Begin your project</a>
+        </div></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ STUDIO ============ -->
+  <section class="studio" id="studio" aria-labelledby="studio-title" tabindex="-1">
+    <div class="wrap studio__grid">
+      <p class="label studio__label" data-reveal>The studio</p>
+      <h2 class="studio__title" id="studio-title" data-reveal>We are architects who <em>build</em>, and builders who <em>draw</em>.</h2>
+      <figure class="studio__figure" data-reveal="fade">
+        <div class="arch" style="--tint: var(--stone)" data-elevation="villa" data-draw></div>
+        <figcaption class="caption">Front elevation · Scale 1:200</figcaption>
+      </figure>
+      <div class="studio__body">
+        <p class="lead" data-reveal>The people who draw your home are the people who build it.</p>
+        <div class="prose" data-reveal>
+          <p>Most homes pass through three or four firms before anyone moves in, and something gets lost at every hand-off. With us the drawings stay true on site, the budget stays in one place, and you always know whom to call.</p>
+        </div>
+        <dl class="team" data-reveal>
+          <div><dt>Design studio</dt><dd>Architects, interior designers and 3D visualisers</dd></div>
+          <div><dt>Engineering</dt><dd>Structural and MEP engineers who check every drawing</dd></div>
+          <div><dt>Site team</dt><dd>Site engineers, supervisors and crews we have trained for years</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REASONS ============ -->
+  <section class="reasons" aria-labelledby="reasons-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label" data-reveal>Why design and build together</p>
+        <h2 class="h2" id="reasons-title" data-reveal>One team, <em>start</em> to finish</h2>
+      </div>
+      <ul class="reasons__list">
+        <li class="reason" data-reveal>
+          <svg class="reason__icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="10" r="3.2"/><path d="M30.6 12.8 17 55M33.4 12.8 47 55M21.5 41.5c6.6 3.4 14.4 3.4 21 0M10 55h44"/></svg>
+          <h3>One contract, start to finish</h3>
+          <p>Design, approvals, construction and interiors sit under a single agreement. No hand-offs between firms and no finger-pointing when something needs fixing.</p>
+        </li>
+        <li class="reason" data-reveal>
+          <svg class="reason__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M16 56h32M19 52h26M22 52V20M42 52V20M27 52V20M32 52V20M37 52V20M19 20h26M16 16h32M21 16c0-4 4-6 11-6s11 2 11 6"/></svg>
+          <h3>Engineered to outlast</h3>
+          <p>Structural design done in-house, materials tested on site, and details drawn for our weather: harsh sun, dust and a long monsoon.</p>
+        </li>
+        <li class="reason" data-reveal>
+          <svg class="reason__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 54V10l44 44H10ZM18 46V29l17 17H18ZM14 54v-3M18 54v-5M22 54v-3M26 54v-5M30 54v-3M34 54v-5M38 54v-3M42 54v-5M46 54v-3"/></svg>
+          <h3>Clear to the last rupee</h3>
+          <p>An itemised BOQ before we break ground, payments tied to milestones, and a photo report from site every week.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label" data-reveal>What we do</p>
+        <h2 class="h2" id="services-title" data-reveal>Six disciplines, <em>one</em> site team</h2>
+      </div>
+      <ul class="services__list">
+        <li class="service" data-reveal>
+          <h3 class="service__title">Architecture &amp; planning</h3>
+          <p class="service__text">Concept design, working drawings, 3D visualisation and plan sanction.</p>
+          <p class="service__tags">Homes · Villas<br>Apartments · Workplaces</p>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__title">Structural engineering</h3>
+          <p class="service__text">RCC and steel design with soil-informed foundations and peer-checked calculations.</p>
+          <p class="service__tags">RCC · Steel<br>Retrofits</p>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__title">Turnkey construction</h3>
+          <p class="service__text">Civil works from excavation to handover, run by our own site engineers.</p>
+          <p class="service__tags">Excavation to handover</p>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__title">Interiors &amp; joinery</h3>
+          <p class="service__text">Kitchens, wardrobes, lighting and furniture designed along with the architecture.</p>
+          <p class="service__tags">Kitchens · Wardrobes<br>Lighting</p>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__title">Renovation &amp; additions</h3>
+          <p class="service__text">Extra floors, structural repairs and reworked plans for homes that need to grow.</p>
+          <p class="service__tags">Extra floors · Repairs</p>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__title">Landscape &amp; exteriors</h3>
+          <p class="service__text">Courtyards, pools, gardens and compound walls that complete the house.</p>
+          <p class="service__tags">Courtyards · Pools<br>Gardens</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <!-- Projects: the line drawings are generated in js/main.js (DRAW); the photographs are in assets/works.
+       Projects with a page of their own go here; all the others go on work/more.html (the last card). -->
+  <section class="works" id="works" aria-labelledby="works-title">
+    <div class="wrap works__head">
+      <div class="section-head">
+        <p class="label" data-reveal>Selected work</p>
+        <h2 class="h2" id="works-title" data-reveal>Drawn here, <em>built</em> there</h2>
+      </div>
+      <div class="works__nav">
+        <p class="label works__hint">Drag or use the arrows</p>
+        <button class="round-btn" type="button" aria-label="Previous project" data-works-prev>
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M16 9H2.5M8 3 2 9l6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+        </button>
+        <button class="round-btn" type="button" aria-label="Next project" data-works-next>
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="works__track" tabindex="0" role="region" aria-label="Projects, scrolls sideways" data-works-track>
+      <!-- A card with a project page: the arch opens into work/arun-hotel.html (js/main.js, section 12). -->
+      <article class="work work--link">
+        <div class="arch" style="--tint: var(--stone)" data-elevation="arun">
+          <img class="work__photo" src="assets/works/arun-hotel.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Arun Hotel at dusk: a stone-clad tower of balconies above a lit entrance canopy, next to a glass atrium with a round window.">
+        </div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/arun-hotel.html" data-expand data-prefetch="assets/works/arun-hotel/street-dusk.jpg">Arun Hotel</a></h3><span class="work__status">Hospitality</span></div>
+          <p class="work__facts">Triangle site at Five Lights Circle · Rooms, restaurant, banquet hall</p>
+          <p class="work__more" aria-hidden="true">View project <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+      <article class="work work--link">
+        <div class="arch" style="--tint: var(--sage)" data-elevation="shukavana">
+          <img class="work__photo" src="assets/works/shukavana.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Shukavana: a timber sign with the name in four scripts under a glass room of bonsai, and a path to the entrance lined with painted parrots on painted boxes.">
+        </div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/shukavana.html" data-expand data-prefetch="assets/works/shukavana/front-elevation.jpg">Shukavana</a></h3><span class="work__status">Museum</span></div>
+          <p class="work__facts">Bird museum · Bamboo columns, a winding plinth of birds</p>
+          <p class="work__more" aria-hidden="true">View project <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+      <article class="work work--link">
+        <div class="arch" style="--tint: var(--blush)" data-elevation="apollo">
+          <img class="work__photo" src="assets/works/apollo-hospital.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Apollo Hospital: an arcaded front block with arched windows, a planted terrace and warm lighting at dusk.">
+        </div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/apollo-hospital.html" data-expand data-prefetch="assets/works/apollo-hospital/street-front.jpg">Apollo Hospital</a></h3><span class="work__status">Healthcare</span></div>
+          <p class="work__facts">Dining, doctors' cafe and offices · Arched street front</p>
+          <p class="work__more" aria-hidden="true">View project <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+      <article class="work work--link">
+        <div class="arch" style="--tint: var(--sage)" data-elevation="emerald">
+          <img class="work__photo" src="assets/works/abhishek-emerald-enclave.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Abhishek Emerald Enclave: a two-storey home in patterned tiles, with a roof garden and tall trees.">
+        </div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/abhishek-emerald-enclave.html" data-expand>Abhishek Emerald Enclave</a></h3><span class="work__status">Residential</span></div>
+          <p class="work__facts">Private home · Four bedrooms, courts, roof garden</p>
+          <p class="work__more" aria-hidden="true">View project <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+      <article class="work work--link">
+        <div class="arch" style="--tint: var(--blush)" data-elevation="mahadev">
+          <img class="work__photo" src="assets/works/mahadev-residence.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Mahadev&#8217;s Residence at dusk: boxes of ribbed grey cladding with creepers over their parapets, a timber-lined frame around a window, palms, and a boundary of stone panels and white jaali blocks.">
+        </div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/mahadev-residence.html" data-expand data-prefetch="assets/works/mahadev-residence/corner-dusk.jpg">Mahadev&#8217;s Residence</a></h3><span class="work__status">Residential</span></div>
+          <p class="work__facts">Private home · Ribbed cladding, timber and creepers</p>
+          <p class="work__more" aria-hidden="true">View project <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+      <article class="work work--link">
+        <div class="arch" style="--tint: var(--sky)" data-elevation="chandrashekar">
+          <img class="work__photo" src="assets/works/chandrashekar-residency.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Chandrashekar&#8217;s Residency at dusk: layered white frames with downlights around stone, timber louvres and dark fins, over garages at street level.">
+        </div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/chandrashekar-residency.html" data-expand data-prefetch="assets/works/chandrashekar-residency/corner.jpg">Chandrashekar&#8217;s Residency</a></h3><span class="work__status">Residential</span></div>
+          <p class="work__facts">Private home · White frames, stone, timber and fins</p>
+          <p class="work__more" aria-hidden="true">View project <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+      <article class="work work--link">
+        <div class="arch" style="--tint: var(--stone)" data-elevation="kiranbabu">
+          <img class="work__photo" src="assets/works/kiran-babu-residency.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Kiran Babu&#8217;s Residency at night: a thin roof on white piers with downlights in its timber soffit, terracotta jaali, a timber-clad first floor with a balcony and creepers, and slatted gates at street level.">
+        </div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/kiran-babu-residency.html" data-expand data-prefetch="assets/works/kiran-babu-residency/corner-night.jpg">Kiran Babu&#8217;s Residency</a></h3><span class="work__status">Residential</span></div>
+          <p class="work__facts">Private home · A floating roof, jaali, timber and creepers</p>
+          <p class="work__more" aria-hidden="true">View project <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+      <!-- The last card opens work/more.html: one page for all the other projects. -->
+      <article class="work work--link work--more">
+        <div class="arch" style="--tint: var(--paper-2)" data-elevation="more"></div>
+        <div class="work__meta">
+          <div class="work__row"><h3><a class="work__link" href="work/more.html" data-fade>View more</a></h3><span class="work__status">All other work</span></div>
+          <p class="work__facts">Homes, a farm house, terraces and commercial complexes</p>
+          <p class="work__more" aria-hidden="true">See all projects <svg viewBox="0 0 18 18"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FIGURES ============ -->
+  <section class="figures" aria-labelledby="figures-title">
+    <div class="wrap">
+      <h2 class="sr-only" id="figures-title">The studio in numbers</h2>
+      <div class="figures__grid">
+        <div class="fig" data-reveal><p class="fig__num"><span data-count="6">6</span><small>+</small></p><p class="fig__label">Years of practice</p></div>
+        <div class="fig" data-reveal><p class="fig__num"><span data-count="50">50</span><small>+</small></p><p class="fig__label">Homes handed over</p></div>
+        <div class="fig" data-reveal><p class="fig__num"><span data-count="1.5" data-decimals="1">1.5</span><small>&nbsp;lakh</small></p><p class="fig__label">Square feet designed and built</p></div>
+        <div class="fig" data-reveal><p class="fig__num"><span>1</span></p><p class="fig__label">Contract, from first line to final light</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MATERIALS ============ -->
+  <section class="materials" aria-labelledby="materials-title">
+    <h2 class="sr-only" id="materials-title">Materials we work with</h2>
+    <div class="marquee" data-marquee>
+      <ul class="marquee__group">
+        <li>Exposed concrete</li><li>Lime plaster</li><li>Burma teak</li><li>Kota stone</li><li>Sadarahalli granite</li><li>Brushed brass</li><li>Terracotta jaali</li><li>Fluted glass</li>
+      </ul>
+      <ul class="marquee__group" aria-hidden="true">
+        <li>Exposed concrete</li><li>Lime plaster</li><li>Burma teak</li><li>Kota stone</li><li>Sadarahalli granite</li><li>Brushed brass</li><li>Terracotta jaali</li><li>Fluted glass</li>
+      </ul>
+    </div>
+    <button class="marquee-toggle" type="button" aria-pressed="false" data-marquee-toggle>Pause</button>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact__grid">
+      <div class="contact__intro">
+        <p class="label" data-reveal>Start a project</p>
+        <h2 class="h2 contact__title" id="contact-title" data-reveal>Have a plot? <span class="script">Let us walk it together.</span></h2>
+        <p class="lead" data-reveal>Tell us about the site and what you would like to build. We call back within one working day to set up a site visit.</p>
+        <dl class="details" data-reveal>
+          <div><dt>Call or WhatsApp</dt><dd><a class="copy-value" href="tel:+919945459535" data-copy-value>+91 99454 59535</a><button class="copy-btn" type="button" data-copy>Copy</button><a class="copy-btn" href="https://wa.me/919945459535" target="_blank" rel="noopener">WhatsApp</a></dd></div>
+          <div><dt>Email</dt><dd><a class="copy-value" href="mailto:sbk.architects2022@gmail.com" data-copy-value>sbk.architects2022@gmail.com</a><button class="copy-btn" type="button" data-copy>Copy</button></dd></div>
+          <div><dt>Studio</dt><dd>#3282/1 Aashrayaa Residency, Ground Floor, Vijay Nagar, 3rd Stage, Near Sangam Circle, Mysore-30</dd></div>
+          <div><dt>Hours</dt><dd>Monday to Saturday, 10 am to 7 pm</dd></div>
+        </dl>
+      </div>
+
+      <form class="form" novalidate data-form aria-describedby="form-intro">
+        <p class="form__intro" id="form-intro">Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
+        <div class="field">
+          <label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+          <p class="field__error" id="f-name-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="f-phone-hint f-phone-err">
+          <p class="field__hint" id="f-phone-hint">We will call you, or message you on WhatsApp if you prefer.</p>
+          <p class="field__error" id="f-phone-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-email">Email <span class="opt">(optional)</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="f-email-err">
+          <p class="field__error" id="f-email-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-type">Project type</label>
+          <select id="f-type" name="type">
+            <option>New home</option>
+            <option>Apartments or villas</option>
+            <option>Workplace or commercial</option>
+            <option>Interiors</option>
+            <option>Renovation or extra floor</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-site">Plot location <span class="opt">(optional)</span></label>
+          <input id="f-site" name="site" type="text" autocomplete="address-level2" placeholder="Area or layout name">
+        </div>
+        <div class="field">
+          <label for="f-size">Plot size <span class="opt">(optional)</span></label>
+          <input id="f-size" name="size" type="text" placeholder="For example 40 by 60 ft">
+        </div>
+        <div class="field field--full">
+          <label for="f-msg">What would you like to build? <span class="opt">(optional)</span></label>
+          <textarea id="f-msg" name="message" rows="4"></textarea>
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--solid form__submit" type="submit" data-submit><span data-submit-label>Request a site visit</span></button>
+          <p class="form__note">We use your details only to reply to this request.</p>
+        </div>
+        <p class="form__status sr-only" role="status" aria-live="polite" data-form-status></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer__word" aria-hidden="true">SBK <em>Architects</em></p>
+    <div class="titleblock" role="group" aria-label="Studio details, set out like a drawing title block">
+      <div class="tb tb--wide"><span class="tb__k">Project</span><span class="tb__v">Your home, drawn and built</span></div>
+      <div class="tb"><span class="tb__k">Architect &amp; contractor</span><span class="tb__v">SBK Architects</span></div>
+      <div class="tb"><span class="tb__k">Drawing</span><span class="tb__v">A-000 · Cover sheet</span></div>
+      <div class="tb"><span class="tb__k">Scale</span><span class="tb__v">1:100</span></div>
+      <div class="tb"><span class="tb__k">Sheet</span><span class="tb__v">01 of 01</span></div>
+      <div class="tb tb--wide"><span class="tb__k">Studio</span><span class="tb__v">#3282/1 Aashrayaa Residency, Ground Floor, Vijay Nagar, 3rd Stage, Near Sangam Circle, Mysore-30</span></div>
+      <div class="tb"><span class="tb__k">Contact</span><span class="tb__v"><a href="tel:+919945459535">+91 99454 59535</a></span></div>
+      <div class="tb"><span class="tb__k">Follow</span><span class="tb__v"><a href="https://www.instagram.com/sbk_architects/" target="_blank" rel="noopener">Instagram</a></span></div>
+      <div class="tb"><span class="tb__k">Date</span><span class="tb__v" data-year>2026</span></div>
+      <div class="tb"><span class="tb__k">Revision</span><span class="tb__v">A</span></div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> SBK Architects. All rights reserved.</p>
+      <a class="back-top" href="#top">Back to top <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 13V1.5M2 6l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+    </div>
+  </div>
+</footer>
+<!--CONTENT:END-->
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/build3d.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apollo Hospital · SBK Architects</title>
+<meta name="description" content="A dining and office block for Apollo Hospital by SBK Architects: a dining hall and kitchen, a doctors' cafe with an outdoor terrace, an HR office and a bridge to the hospital. 3D views and plans.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apollo Hospital · SBK Architects">
+<meta property="og:description" content="A dining hall, a doctors' cafe and an HR office on the hospital's street front.">
+<meta name="theme-color" content="#F1EEE6">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Ballet:opsz@16..72&amp;family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&amp;display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/project.css">
+<!-- the hero picture: a tiny copy of it, shown for the frame or two before the photograph is decoded, and
+     where it is framed (object-position), so the card's crop and the full picture line up as the arch opens -->
+<style>:root { --lqip: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAbADADASIAAhEBAxEB/8QAGgAAAwADAQAAAAAAAAAAAAAAAwQGAAIFAf/EADAQAAIBAwIDBgQHAQAAAAAAAAECAwAEEQUSEyExFEFRYXGBBiIyoSNCgrHB0dLh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDAv/EACARAAMAAQMFAQAAAAAAAAAAAAABAhEDEjETITJBUaH/2gAMAwEAAhEDEQA/AJSOO2jQBbbdjJGTy/byppdQkSMObcBemeJkD7V0bW2vbu1imOm6aI5tqqzMY2ZiPHNZH8P3z8Sz4NqWYBmhWcblVjyzn0qTuY8UbUt8iUerr3hB6yH/ADRYtWheTYxUDHIqxbJ8OlHHw8Vh7TmHhRsRv7Sm0HOMZx6e1Bh0e4s9RQQRkTW86rnIZd7AsBnbg8h6VNa9/CnTkesbuOO/tpmWUxrKrE8F8Yz6VTT3Giazf4YxvNMvDSMwyZxnPLlgHzoGk3utpJaWn4LRWpMMvCuN3PHLcPH7da21HX9V0KGO5mQTwhyZi5wdrH5VBHT/AJSrV1Gu6RpRCICC4PAIR59q/SC64Q9xUZ5V0lvJ9zagskqux4Zfeu5hzwD4ge1QKXMynasjADoBT1re3J6yk5z1APdTqVzgirKk3a9leDbIYpHLGMuNucAePlXsiJBqMd88t12hBGARImCAqj+PbNSS6hdFTmXPLP0j+qNbX1zKTvkz8p/KKWJXr9HvK43ctncMBLMWduIWWUcySpGfYYx5miLLLruogXkshiM5YwrIFjKnHy4594zUV2+6ZlzLn9IrV7u4GxhKwO8DIowkuA35Z//Z"); --pos: 53.6% 30%; }</style>
+<script>
+  /* Arriving from a card on the home page? Decide before the first paint; js/project.js does the rest. */
+  (function (d) {
+    d.classList.add('js');
+    try {
+      var x = JSON.parse(sessionStorage.getItem('sbk:xfer') || 'null');
+      sessionStorage.removeItem('sbk:xfer');
+      var key = function (u) { return new URL(u, location.href).pathname.replace(/\.html$/, ''); };
+      if (x && Date.now() - x.t < 8000 && key(x.to) === key(location.href) && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        d.classList.add('is-xfer');
+        window.SBK_XFER = x;
+        // if the page scripts never run, do not leave the page hidden behind the arch
+        setTimeout(function () {
+          if (window.AA && window.AA.project) return;
+          d.classList.remove('is-xfer');
+          var f = document.querySelector('.arch.xfer');
+          if (f) f.remove();
+        }, 3000);
+      }
+    } catch (e) { /* storage blocked: no transition */ }
+  })(document.documentElement);
+</script>
+</head>
+<body data-hero-src="../assets/works/apollo-hospital/street-front.jpg">
+<script>
+  /* the card's arch, exactly where the home page left it: the full picture (framed by --pos, so
+     at the card's shape it is the card's crop), with the card's own photograph on top until the
+     full picture is decoded */
+  (function (x) {
+    if (!x) return;
+    var b = document.body, a = document.createElement('div'), full = new Image(), card = new Image();
+    a.className = 'arch xfer';
+    a.setAttribute('aria-hidden', 'true');
+    a.style.cssText = 'left:' + x.r[0] + 'px;top:' + x.r[1] + 'px;width:' + x.r[2] + 'px;height:' + x.r[3] + 'px';
+    full.alt = card.alt = '';
+    full.className = 'xfer__full';
+    card.className = 'xfer__card';
+    full.src = b.getAttribute('data-hero-src');
+    card.decoding = 'sync';
+    card.src = x.src;
+    a.appendChild(full);
+    a.appendChild(card);
+    b.appendChild(a);
+  })(window.SBK_XFER);
+</script>
+<!--CONTENT:START-->
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      <span class="menu-btn__icon" aria-hidden="true"><i></i><i></i></span>
+      <span class="menu-btn__label">Menu</span>
+    </button>
+    <a class="brand" href="../index.html" aria-label="SBK Architects, home">
+      <svg class="brand__mark" viewBox="0 0 26 32" aria-hidden="true"><path d="M2.5 31V13a10.5 10.5 0 0 1 21 0v18M7.5 31V14.5a5.5 5.5 0 0 1 11 0V31M1 31.3h24M13 2.5v4.2"/></svg>
+      <span class="brand__name">SBK <em>Architects</em></span>
+    </a>
+    <a class="btn btn--ghost header-cta" href="../index.html#contact">Book a site visit</a>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" data-menu inert>
+  <div class="menu__top">
+    <button class="menu-btn menu__close" type="button" data-menu-close>
+      <span class="menu-btn__icon" aria-hidden="true"><i style="transform:translateY(3.5px) rotate(45deg)"></i><i style="width:100%;transform:translateY(-3.5px) rotate(-45deg)"></i></span>
+      <span>Close</span>
+    </button>
+    <span class="brand" aria-hidden="true">
+      <svg class="brand__mark" viewBox="0 0 26 32"><path d="M2.5 31V13a10.5 10.5 0 0 1 21 0v18M7.5 31V14.5a5.5 5.5 0 0 1 11 0V31M1 31.3h24M13 2.5v4.2"/></svg>
+    </span>
+  </div>
+  <div class="menu__body">
+    <nav aria-label="Main">
+      <ul class="menu__links">
+        <li><a href="../index.html#phase-1" style="--i:0">The build <span>7 phases</span></a></li>
+        <li><a href="../index.html#studio" style="--i:1">Studio</a></li>
+        <li><a href="../index.html#services" style="--i:2">Services</a></li>
+        <li><a href="../index.html#works" style="--i:3">Work</a></li>
+        <li><a href="../index.html#contact" style="--i:4">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu__aside">
+      <p class="label label--gold">Architects &amp; civil contractors</p>
+      <p>Design, structure and construction under one contract. Tell us about your plot and we will set up a site visit.</p>
+      <a class="btn btn--solid" href="../index.html#contact">Book a site visit</a>
+    </div>
+  </div>
+  <div class="menu__foot">
+    <p class="label">Mysore, Karnataka</p>
+    <p class="label">Mon to Sat · 10 am to 7 pm</p>
+  </div>
+</div>
+
+<main id="content" class="project" tabindex="-1">
+  <span id="top"></span>
+  <!-- ============ HERO: the card's arch opens out into this picture ============ -->
+  <section class="p-hero" aria-labelledby="p-title">
+    <div class="wrap p-hero__bar">
+      <a class="p-back p-in" style="--d:0.05" href="../index.html#works" data-back>
+        <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M16 9H2.5M8 3 2 9l6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+        Selected work
+      </a>
+      <p class="label p-eyebrow p-in" style="--d:0.1"><span>Healthcare</span><i aria-hidden="true"></i><span>Dining, cafe and offices</span></p>
+    </div>
+    <div class="wrap">
+      <button class="p-hero__frame" type="button" data-hero data-zoom data-title="The street front at dusk" aria-label="Enlarge the 3D view of the street front">
+        <img src="../assets/works/apollo-hospital/street-front.jpg" width="1672" height="941" fetchpriority="high" decoding="async" alt="The block's street front at dusk: white columns and arched windows, a brick arch at the entrance, planters along the terrace and a glazed cafe above, in front of the hospital.">
+        <span class="p-zoom-hint" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>3D view · Enlarge</span>
+      </button>
+    </div>
+    <div class="wrap p-hero__text">
+      <div class="p-hero__name">
+        <h1 class="p-title p-in" id="p-title" style="--d:0.16">Apollo <em>Hospital</em></h1>
+        <p class="p-script script p-in" style="--d:0.3" aria-hidden="true">a front block for the hospital</p>
+      </div>
+      <div class="p-hero__intro">
+        <p class="lead p-in" style="--d:0.36">A two-storey block on the hospital's street front: a dining hall and its kitchen below, and above them a doctors' cafe with an outdoor terrace and an HR office. A covered bridge brings doctors across from the hospital.</p>
+        <p class="p-in" style="--d:0.44">In the 3D views, white columns and arched windows face the street, a brick arch marks the entrance, and planters line the terrace above.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACTS, set out like a drawing title block ============ -->
+  <section class="p-facts" aria-label="Project facts">
+    <div class="wrap">
+      <dl class="titleblock p-tb" data-reveal>
+        <div class="tb tb--wide"><dt class="tb__k">Programme</dt><dd class="tb__v">Dining hall and kitchen, doctors' cafe and terrace, HR office</dd></div>
+        <div class="tb"><dt class="tb__k">Type</dt><dd class="tb__v">Healthcare</dd></div>
+        <div class="tb"><dt class="tb__k">Floors</dt><dd class="tb__v">Ground and first</dd></div>
+        <div class="tb"><dt class="tb__k">Cafe seating</dt><dd class="tb__v">10 inside, 18 outdoors</dd></div>
+        <div class="tb"><dt class="tb__k">Ways in</dt><dd class="tb__v">Street, dining, kitchen service, bridge</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ 3D VIEWS ============ -->
+  <section class="p-views" aria-labelledby="views-title">
+    <div class="wrap">
+      <div class="section-head p-plans__head">
+        <p class="label" data-reveal>3D views</p>
+        <h2 class="h2" id="views-title" data-reveal>On the street, <em>and above it</em></h2>
+      </div>
+      <div class="p-views__grid">
+        <figure class="p-shot p-shot--wide" data-reveal="fade">
+          <button class="p-shot__frame" type="button" data-zoom data-title="From above: the bridge, the domed porch and the drop-off" aria-label="Enlarge the 3D view: from above: the bridge, the domed porch and the drop-off">
+            <img src="../assets/works/apollo-hospital/aerial.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="An aerial view at dusk: the hospital, a covered bridge to the block, a domed entrance porch and the drop-off canopy with an ambulance, and the block with its planted terrace and cafe along the road.">
+            <span class="p-zoom-hint" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Enlarge</span>
+          </button>
+          <figcaption class="caption">From above: the bridge, the domed porch and the drop-off</figcaption>
+        </figure>
+        <figure class="p-shot" data-reveal="fade">
+          <button class="p-shot__frame" type="button" data-zoom data-title="Along the footpath" aria-label="Enlarge the 3D view: along the footpath">
+            <img src="../assets/works/apollo-hospital/street-arcade.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="The street front along the footpath: white columns between arched windows, clipped trees, a creeper-covered brick arch at the entrance, and the drop-off canopy beyond.">
+            <span class="p-zoom-hint" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Enlarge</span>
+          </button>
+          <figcaption class="caption">Along the footpath</figcaption>
+        </figure>
+        <figure class="p-shot" data-reveal="fade">
+          <button class="p-shot__frame" type="button" data-zoom data-title="The doctors' cafe and its terrace" aria-label="Enlarge the 3D view: the doctors' cafe and its terrace">
+            <img src="../assets/works/apollo-hospital/cafe-terrace.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="The first-floor terrace: the doctors' cafe in a glass pavilion under a deep roof, planters, a timber bench around a bamboo tree and a timber stair coming down to it.">
+            <span class="p-zoom-hint" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Enlarge</span>
+          </button>
+          <figcaption class="caption">The doctors' cafe and its terrace</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANS ============ -->
+  <section class="p-plans" id="plans" aria-labelledby="plans-title">
+    <div class="wrap">
+      <div class="section-head p-plans__head">
+        <p class="label" data-reveal>Plans</p>
+        <h2 class="h2" id="plans-title" data-reveal>Dining below, a <em>cafe</em> above</h2>
+        <p class="lead" data-reveal>A dining hall and its kitchen on the ground floor; a cafe and terrace for doctors and the HR office on the first. Each has its own way in.</p>
+      </div>
+    </div>
+
+    <article class="p-sheet p-sheet--wide" aria-labelledby="sheet-1">
+      <div class="wrap p-sheet__grid">
+        <header class="p-sheet__head" data-reveal>
+          <p class="p-sheet__no"><span>01</span> / 02</p>
+          <h3 class="p-sheet__title" id="sheet-1">Ground floor</h3>
+          <p class="label">Dining hall and kitchen · Not to scale</p>
+        </header>
+        <ol class="p-notes" data-reveal>
+          <li>The main entrance opens off the footpath on the road.</li>
+          <li>The dining hall has its own entry from the side lane, with planting along its length.</li>
+          <li>The kitchen, with its equipment and a washing area, has a service entry from the lane and its own stair.</li>
+          <li>A second stair at the front rises to the first floor.</li>
+        </ol>
+        <figure class="p-sheet__fig" data-reveal="fade">
+          <button class="p-plan" type="button" data-zoom data-title="Ground floor plan" aria-label="Enlarge the ground floor plan">
+            <img src="../assets/works/apollo-hospital/ground-floor.jpg" width="2400" height="1172" loading="lazy" decoding="async" alt="Ground floor plan: the entrance from the footpath, a dining hall with long tables, planters along the side lane, the kitchen with its equipment and washing area, a service entry and two stairs.">
+            <span class="p-zoom-hint" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Enlarge</span>
+          </button>
+        </figure>
+      </div>
+    </article>
+
+    <article class="p-sheet p-sheet--wide" aria-labelledby="sheet-2">
+      <div class="wrap p-sheet__grid">
+        <header class="p-sheet__head" data-reveal>
+          <p class="p-sheet__no"><span>02</span> / 02</p>
+          <h3 class="p-sheet__title" id="sheet-2">First floor</h3>
+          <p class="label">Doctors' cafe, terrace and HR office · Not to scale</p>
+        </header>
+        <ol class="p-notes" data-reveal>
+          <li>Doctors come across from the hospital on a connecting bridge.</li>
+          <li>The doctors' cafe seats 10 inside and 18 outdoors, behind bamboo partitions.</li>
+          <li>An outdoor seating area gathers around a round planter.</li>
+          <li>The HR office has a reception, a waiting lounge, a manager's cabin, a meeting room and cabins, with washrooms between it and the cafe.</li>
+        </ol>
+        <figure class="p-sheet__fig" data-reveal="fade">
+          <button class="p-plan p-plan--white" type="button" data-zoom data-title="First floor plan" aria-label="Enlarge the first floor plan">
+            <img src="../assets/works/apollo-hospital/first-floor.jpg" width="2400" height="1076" loading="lazy" decoding="async" alt="First floor plan: the entry from the doctors' connecting bridge, an outdoor seating area around a round planter, the doctors' cafe and its outdoor seating behind bamboo partitions, washrooms, and the HR office with reception, waiting lounge, cabins and a meeting room.">
+            <span class="p-zoom-hint" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Enlarge</span>
+          </button>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ CONSTRUCTION ============ -->
+  <section class="p-build" aria-labelledby="build-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label" data-reveal>Construction</p>
+        <h2 class="h2" id="build-title" data-reveal>How it is <em>put together</em></h2>
+      </div>
+      <ul class="p-build__list">
+        <li class="p-part" data-reveal>
+          <svg class="p-part__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 12h56M4 16h56M8 16v40M24 16v40M40 16v40M56 16v40M4 56h56"/><path d="M12 56V36a4 4 0 0 1 8 0v20M28 56V36a4 4 0 0 1 8 0v20M44 56V36a4 4 0 0 1 8 0v20"/></svg>
+          <h3>Arcade</h3>
+          <p>White columns frame a row of arched windows along the street, with a brick-lined arch at the entrance.</p>
+        </li>
+        <li class="p-part" data-reveal>
+          <svg class="p-part__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 20l28-6 28 6M8 22v30h48V22"/><path d="M8 52h48M20 22v30M32 22v30M44 22v30"/><path d="M14 40h10M38 40h10"/></svg>
+          <h3>Cafe pavilion</h3>
+          <p>Upstairs, the doctors' cafe sits in a glass pavilion under a deep roof lined with timber.</p>
+        </li>
+        <li class="p-part" data-reveal>
+          <svg class="p-part__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 8v48M4 30h56M4 22h56M10 22v8M18 22v8M26 22v8M34 22v8M42 22v8M50 22v8M58 22v8"/><path d="M4 16h56"/><path d="M54 30v26M60 30v26"/></svg>
+          <h3>Bridge</h3>
+          <p>A covered bridge links the hospital to the first floor.</p>
+        </li>
+        <li class="p-part" data-reveal>
+          <svg class="p-part__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 28h48v28H8zM8 36h48"/><circle cx="20" cy="22" r="5"/><circle cx="36" cy="22" r="5"/><path d="M48 8v20M44 8v8a4 4 0 0 0 8 0V8"/></svg>
+          <h3>Kitchen</h3>
+          <p>The kitchen has its own service entry, washing area and stair, apart from the dining hall's entrance.</p>
+        </li>
+        <li class="p-part" data-reveal>
+          <svg class="p-part__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 40h44l-6 16H16zM8 40h48"/><path d="M32 40V12M32 22c-6-2-10-6-12-12M32 18c6-2 10-6 12-10M32 30c-5 0-9-3-12-7M32 28c5-1 9-4 11-9"/></svg>
+          <h3>Planting</h3>
+          <p>Planters line the terrace edge, bamboo partitions divide the cafe, and planting runs along the side lane.</p>
+        </li>
+        <li class="p-part" data-reveal>
+          <svg class="p-part__icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 10h52v44H6zM6 30h26M32 10v44M32 36h26"/><path d="M14 20h10M40 20h10M14 42h10M40 46h10"/></svg>
+          <h3>Office</h3>
+          <p>The HR office takes the far end of the first floor, reached by its own stair from the street.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ NEXT STEP ============ -->
+  <section class="p-cta" aria-labelledby="cta-title">
+    <div class="wrap p-cta__grid">
+      <div class="p-cta__text">
+        <p class="label label--gold" data-reveal>Start a project</p>
+        <h2 class="h2" id="cta-title" data-reveal>Building for <em>work</em>? <span class="script">Let us walk the site together.</span></h2>
+        <p class="lead" data-reveal>Clinics, cafes, offices and shops: tell us what you need to build and we will set up a site visit.</p>
+      </div>
+      <div class="p-cta__actions" data-reveal>
+        <a class="btn btn--solid" href="../index.html#contact">Book a site visit</a>
+        <a class="btn btn--ghost" href="tel:+919945459535">+91 99454 59535</a>
+        <div class="p-cta__links">
+          <a class="p-back" href="../index.html#works" data-back>
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M16 9H2.5M8 3 2 9l6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+            All selected work
+          </a>
+          <a class="p-next" href="abhishek-emerald-enclave.html">Next project <b>Abhishek Emerald Enclave</b> <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer__word" aria-hidden="true">SBK <em>Architects</em></p>
+    <div class="titleblock" role="group" aria-label="Project and studio details, set out like a drawing title block">
+      <div class="tb tb--wide"><span class="tb__k">Project</span><span class="tb__v">Apollo Hospital, dining and office block</span></div>
+      <div class="tb"><span class="tb__k">Architect &amp; contractor</span><span class="tb__v">SBK Architects</span></div>
+      <div class="tb"><span class="tb__k">Drawing</span><span class="tb__v">Project sheet</span></div>
+      <div class="tb"><span class="tb__k">Scale</span><span class="tb__v">Not to scale</span></div>
+      <div class="tb"><span class="tb__k">Sheet</span><span class="tb__v">01 of 01</span></div>
+      <div class="tb tb--wide"><span class="tb__k">Studio</span><span class="tb__v">#3282/1 Aashrayaa Residency, Ground Floor, Vijay Nagar, 3rd Stage, Near Sangam Circle, Mysore-30</span></div>
+      <div class="tb"><span class="tb__k">Contact</span><span class="tb__v"><a href="tel:+919945459535">+91 99454 59535</a></span></div>
+      <div class="tb"><span class="tb__k">Follow</span><span class="tb__v"><a href="https://www.instagram.com/sbk_architects/" target="_blank" rel="noopener">Instagram</a></span></div>
+      <div class="tb"><span class="tb__k">Date</span><span class="tb__v" data-year>2026</span></div>
+      <div class="tb"><span class="tb__k">Revision</span><span class="tb__v">A</span></div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> SBK Architects. All rights reserved.</p>
+      <a class="back-top" href="#top">Back to top <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 13V1.5M2 6l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- plan viewer -->
+<div class="viewer" role="dialog" aria-modal="true" aria-labelledby="viewer-title" data-viewer hidden>
+  <div class="viewer__bar">
+    <p class="viewer__title" id="viewer-title"><span data-viewer-count>1 / 4</span><b data-viewer-title>Drawing</b></p>
+    <div class="viewer__tools">
+      <button class="round-btn" type="button" aria-pressed="false" data-viewer-zoom><span class="sr-only" data-viewer-zoom-label>Zoom in</span><svg viewBox="0 0 18 18" aria-hidden="true"><circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M11.6 11.6 16 16M5 7.5h5M7.5 5v5" fill="none" stroke="currentColor" stroke-width="1.3" data-viewer-plus/></svg></button>
+      <button class="round-btn" type="button" aria-label="Previous drawing" data-viewer-prev><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M16 9H2.5M8 3 2 9l6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+      <button class="round-btn" type="button" aria-label="Next drawing" data-viewer-next><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 9h13.5M10 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+      <button class="round-btn viewer__close" type="button" aria-label="Close" data-viewer-close><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 3l12 12M15 3 3 15" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+    </div>
+  </div>
+  <div class="viewer__stage" data-viewer-stage data-lenis-prevent>
+    <img class="viewer__img" data-viewer-img alt="">
+  </div>
+  <p class="viewer__hint label" data-viewer-hint>Click the drawing to zoom in, drag to move around</p>
+</div>
+<!--CONTENT:END-->
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/project.js"></script>
+</body>
+</html>
